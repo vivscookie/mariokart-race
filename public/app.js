@@ -78,7 +78,8 @@ function statBar(label, value) {
     return `<div class="stat-bar"><span style="width:90px">${label}</span>
         <div style="background:#333;border-radius:3px;flex:1;height:6px">
             <div class="stat-bar-fill" style="width:${pct}%"></div>
-        </div></div>`;
+        </div>
+        <span style="width:14px;text-align:right;color:#ffe600;font-weight:700">${value}</span></div>`;
 }
 
 function checkReady() {
