@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mario Kart Race</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <img src="track.gif" alt="Mario Kart Track" class="track-bg" />
+    <div class="header-title">
+      <h1>🏁 Mario Kart Race</h1>
+      <p>Escolha seus personagens e corrida!</p>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Character Selection -->
+    <section id="selection-screen" class="screen active">
+      <div class="players-selection">
+        <div class="player-col">
+          <h2>Jogador 1</h2>
+          <div class="char-grid" id="grid-p1"></div>
+          <div class="selected-preview" id="preview-p1">
+            <span>Nenhum selecionado</span>
+          </div>
+        </div>
+
+        <div class="vs-divider">VS</div>
+
+        <div class="player-col">
+          <h2>Jogador 2</h2>
+          <div class="char-grid" id="grid-p2"></div>
+          <div class="selected-preview" id="preview-p2">
+            <span>Nenhum selecionado</span>
+          </div>
+        </div>
+      </div>
+
+      <button id="start-btn" class="btn-race" disabled>🏁 INICIAR CORRIDA</button>
+      <p id="selection-error" class="error-msg"></p>
+    </section>
+
+    <!-- Race Screen -->
+    <section id="race-screen" class="screen">
+      <div class="race-header">
+        <div class="racer" id="racer1-display"></div>
+        <div class="scoreboard">
+          <span id="score-p1">0</span>
+          <span class="score-sep">–</span>
+          <span id="score-p2">0</span>
+        </div>
+        <div class="racer" id="racer2-display"></div>
+      </div>
+
+      <div id="round-log" class="round-log"></div>
+
+      <div id="winner-banner" class="winner-banner hidden">
+        <img id="winner-gif" src="" alt="" />
+        <h2 id="winner-text"></h2>
+        <button class="btn-race" id="restart-btn">🔄 Jogar Novamente</button>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
