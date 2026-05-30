@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: mariokart-race
+    runtime: node
+    buildCommand: npm ci --omit=dev
+    startCommand: node src/index.js
+    envVars:
+      - key: PORT
+        value: 3000
+    healthCheckPath: /health
