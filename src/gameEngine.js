@@ -4,7 +4,7 @@ const CHARACTERS = {
     peach:  { NOME: "Peach",  VELOCIDADE: 3, MANOBRABILIDADE: 4, PODER: 2, img: "peach.gif" },
     toad:   { NOME: "Toad",   VELOCIDADE: 5, MANOBRABILIDADE: 2, PODER: 2, img: "toad.gif" },
     yoshi:  { NOME: "Yoshi",  VELOCIDADE: 3, MANOBRABILIDADE: 4, PODER: 3, img: "yoshi.gif" },
-    dk:     { NOME: "DK",     VELOCIDADE: 2, MANOBRABILIDADE: 2, PODER: 5, img: "dk.gif" },
+    dk:     { NOME: "Donkey Kong", VELOCIDADE: 2, MANOBRABILIDADE: 2, PODER: 5, img: "dk.gif" },
     bowser: { NOME: "Bowser", VELOCIDADE: 2, MANOBRABILIDADE: 2, PODER: 5, img: "bowser.gif" },
 };
 
